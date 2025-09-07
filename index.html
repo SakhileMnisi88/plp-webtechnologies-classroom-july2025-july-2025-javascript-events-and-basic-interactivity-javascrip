@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Form & interactions</title>
+</head>
+<body>
+  <header>
+    <h1>page</h1>
+    <nav>
+      <a href="#counter">Counter</a> |
+      <a href="#toggle">Toggle</a> |
+      <a href="#mirror">Mirror</a> |
+      <a href="#contact">Form</a>
+    </nav>
+  </header>
+
+  <main>
+    <!--Counter -->
+    <section id="counter">
+      <h2>Counter</h2>
+      <p>Value: <span id="count">0</span></p>
+      <button id="btn-increment">add up</button>
+      <button id="btn-reset">Reset</button>
+    </section>
+
+    <!--Toggle visibility -->
+    <section id="toggle">
+      <h2>Toggle Details</h2>
+      <button id="btn-toggle">Show or hide</button>
+      <div id="toggle-box" style="display:none; margin-top:8px;">
+        <p>content is toggled</p>
+      </div>
+    </section>
+
+    <!--Live mirror -->
+    <section id="mirror">
+      <h2>Live mirror</h2>
+      <input id="mirror-input" placeholder="Type here" />
+      <p>Mirror: <span id="mirror-output"></span></p>
+    </section>
+
+    <!-- Form with validation -->
+    <section id="contact">
+      <h2>Contact Form</h2>
+      <form id="contact-form" novalidate>
+        <div>
+          <label for="name">Name</label><br />
+          <input id="name" />
+          <div class="error" id="err-name"></div>
+        </div>
+
+        <div>
+          <label for="email">Email</label><br />
+          <input id="email" />
+          <div class="error" id="err-email"></div>
+        </div>
+
+        <div>
+          <label for="password">Password</label><br />
+          <input id="password" />
+          <div class="error" id="err-password"></div>
+        </div>
+
+        <button id="submit-btn" type="submit">Submit</button>
+        <div id="form-status" style="margin-top:8px;"></div>
+      </form>
+    </section>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
